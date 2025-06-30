@@ -1,0 +1,134 @@
+*{ margin: 0;
+box-sizing: border-box;
+transition: 0.4s;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{ 
+display: grid;
+height: 100vh;
+grid-template-columns: 90px 1fr;
+}
+
+#naveg{
+    display: grid;
+    grid-template-rows: 90px 1fr;
+}
+
+#menu{background-color: black;}
+
+#barras{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+fill: #fff;
+height: 35%;
+}
+
+#menu{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+aside{
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -335px;
+    background-color: #fff;
+    z-index: 99;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 90px 1fr;
+}
+
+#sair{
+    display: grid;
+    background-color: black;
+    height: 90px;
+}
+
+#tulen{
+    background-color: #2916e0;
+    position: relative;
+}
+
+#tulen h1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+
+#check{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#check:checked+aside{
+    left: 0;
+}
+
+#check2{
+    width: 90px;
+    height: 90px;
+    z-index: 100;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.seta{
+    position: absolute;
+    height: 35px;
+    fill: #fff;
+    left: 10%;
+    top: 3%;
+    cursor: pointer;
+}
+
+#lista{
+    font-family: "questrial", sans-serif;
+    font-size: 2rem;
+    font-weight: 50;
+    text-align: center;
+    list-style: none;
+    margin-top: 50%;
+    line-height: 2;
+    color: #b2b2b2;
+    text-align: center;
+    margin-left: 0;
+    grid-column: 1/3;
+    margin-right: 20px;
+}
+
+.principal{
+    color: #2916e0;
+    font-weight: 700;
+    
+}
+
+#sociais{
+margin-left: 30%;
+margin-top: 220%;
+}
+
+#sociais2{
+margin-left: 40%;
+margin-top: -200%;
+}
+
+#cor3{
+    text-decoration: none;
+    color: #b2b2b2;
+}
